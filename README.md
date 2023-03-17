@@ -25,8 +25,7 @@ OBS: Para que o robô anexasse o arquivo baixado foi necessário que eu configur
 
 #Execução 
 
-Para usá-lo você terá que clonar esse repositório. Após clonado, considerando que o python já está instalado no seu sistema, instale o selenium através do pip. 
-Além disso, configure o caminho padrão de download da sua máquina para a pasta do projeto. Com isso, você poderá executar o projeto.
+Para usá-lo você terá que clonar esse repositório. Após clonado, considerando que o python já está instalado no seu sistema, instale o selenium através do pip ("pip install selenium"). Além disso, configure o caminho padrão de download da sua máquina para a pasta do projeto. Com isso, você poderá executar o projeto.
 
 
 

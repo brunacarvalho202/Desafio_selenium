@@ -19,7 +19,8 @@ A parte inicial do fluxo, na qual é realizado o download do arquivo, o código 
 Já na parte final do fluxo, no qual o robô envia o arquivo por email, o código foi feito usando algumas bibliotecas do pyhton,
 entre elas a "smtplib" com o objetivo de configurar as regras de comunicação do protocolo SMTP para o envio 
 do email na forma padrão. Além disso, a senha do remetente atribuída a varíável foi gerada pela própria conta da google por motivos de segurança.
-Essa senha é utilizada para apenas uma ocasião que quando concluída será apagada.
+Essa senha é utilizada para apenas uma ocasião que quando concluída será apagada. Por motivos de segurança também, as credenciais sensíveis do login e senha do remetente 
+foram anonimadas em uma pasta de configuração e adicionada ao gitignore fazendo apenas uma chamada a elas no arquivo principal.
 
 OBS: Para que o robô anexasse o arquivo baixado foi necessário que eu configurasse na minha máquina o caminho padrão de download para a pasta do projeto. 
 

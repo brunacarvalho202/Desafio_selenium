@@ -32,8 +32,8 @@ aba_prefeitura.close()
 #dados de host e porta disponibiliado pelo proprio gmail
 host = "smtp.gmail.com"
 porta = "587"
-#chamando as credenciais
-login = config.login
+#chamando as credenciais sensíveis que foram deixadas em anonimo por motivos de segurança
+login = config.login 
 senha = config.senha 
 
 #instanciando a conexão com servidor
@@ -47,7 +47,7 @@ server.starttls()
 server.login(login, senha)
 
 #construção do email
-corpo = "Envio automatizado do arquivo baixado pelo robô implementado pela candidata Bruna Bezerra Ferreira de Caravalho. Segue o link do repositório:  "
+corpo = "Envio automatizado do arquivo baixado pelo robô implementado pela candidata Bruna Bezerra Ferreira de Caravalho. Segue o link do repositório com README preenchido: https://github.com/brunacarvalho202/Desafio_selenium.git "
 
 #dando o formato mime ao meu email para preencher
 email_msg = MIMEMultipart()
@@ -57,6 +57,7 @@ email_msg['To'] = login #teste
 email_msg['Subject'] = "ENTREGA DO DESAFIO VAGA ESTÁGIO TI | PROCESSO SELETIVO QCA" #assunto
 
 #caminho do arquivo que será anexado
+#caminho padrão de foi mudado para a pasta do projeto com o objetivo que o arquivo fosse referenciado aqui
 caminho = "C:/Users/magalu/Desktop/Desafio_selenium/bairro.csv"
 arquivo = open(caminho,'rb') #lendo binario do arquivo que esta no caminho e guardando nessa variavel
 

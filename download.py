@@ -7,6 +7,7 @@ from email.mime.text import MIMEText
 #para anexar arquivo no email
 from email.mime.base import MIMEBase
 from email import encoders
+import config #arquivo com credenciais sensíveis do smtp
 
 #abrir navegador
 aba_prefeitura = webdriver.Chrome()
@@ -31,8 +32,9 @@ aba_prefeitura.close()
 #dados de host e porta disponibiliado pelo proprio gmail
 host = "smtp.gmail.com"
 porta = "587"
-login = "brubslubs2019@gmail.com" #email criado para desafio
-senha = "iwdzoexhzszyvpcb" #senha gerada pelo google para apenas um uso
+#chamando as credenciais
+login = config.login
+senha = config.senha 
 
 #instanciando a conexão com servidor
 server = smtplib.SMTP(host,porta)

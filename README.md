@@ -1,11 +1,8 @@
-#Desafio Técnico realizado por Bruna Bezerra.
-
-Esse é um repositório que contêm a implementação de um robô requisitado por um desafio técnico. 
-Tipo Robô: Extração de relatório
+#Robô: Extração de relatório
 
 #Objetivo
 
-#O robô criado interage com o navegador seguindo o seguinte fluxo pedido: 
+O robô criado interage com o navegador seguindo o seguinte fluxo pedido: 
 Entrar no site da prefeitura do Recife >
 Clicar no item "Secretaria de infraestrutura e serviços urbanos" >
 Clicar no item "Área urbana" >
